@@ -1,0 +1,14 @@
+c:\users\walker\documents\visual studio 2017\Projects\TerraJS\TerraJS\bin\Debug\TerraJS.dll
+c:\users\walker\documents\visual studio 2017\Projects\TerraJS\TerraJS\bin\Debug\TerraJS.pdb
+c:\users\walker\documents\visual studio 2017\Projects\TerraJS\TerraJS\bin\Debug\jint.dll
+c:\users\walker\documents\visual studio 2017\Projects\TerraJS\TerraJS\bin\Debug\OTAPI.dll
+c:\users\walker\documents\visual studio 2017\Projects\TerraJS\TerraJS\bin\Debug\TerrariaServer.exe
+c:\users\walker\documents\visual studio 2017\Projects\TerraJS\TerraJS\bin\Debug\TShockAPI.dll
+c:\users\walker\documents\visual studio 2017\Projects\TerraJS\TerraJS\bin\Debug\Newtonsoft.Json.dll
+c:\users\walker\documents\visual studio 2017\Projects\TerraJS\TerraJS\bin\Debug\HttpServer.dll
+c:\users\walker\documents\visual studio 2017\Projects\TerraJS\TerraJS\bin\Debug\MySql.Data.dll
+c:\users\walker\documents\visual studio 2017\Projects\TerraJS\TerraJS\bin\Debug\BCrypt.Net.dll
+c:\users\walker\documents\visual studio 2017\Projects\TerraJS\TerraJS\bin\Debug\Mono.Data.Sqlite.dll
+c:\users\walker\documents\visual studio 2017\Projects\TerraJS\TerraJS\obj\Debug\TerraJS.csprojResolveAssemblyReference.cache
+c:\users\walker\documents\visual studio 2017\Projects\TerraJS\TerraJS\obj\Debug\TerraJS.dll
+c:\users\walker\documents\visual studio 2017\Projects\TerraJS\TerraJS\obj\Debug\TerraJS.pdb
