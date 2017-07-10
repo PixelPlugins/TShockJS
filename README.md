@@ -1,4 +1,4 @@
-# TShock
+# TShockJS
 Tool to make Tshock terraria plugins in javascript
 
 ----------------------------------------------------
