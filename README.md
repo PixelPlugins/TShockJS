@@ -4,7 +4,7 @@ Tool to make Tshock terraria plugins in javascript
 ----------------------------------------------------
 How to use:
 
-1. Download TShock for terraria 1.3.5.3 (https://tshock.co/xf/index.php?threads/tshock-4-3-24-for-terraria-1-3-5-3.5019/)
+1. Download TShock for terraria 1.3.5.3 (https://github.com/Pryaxis/TShock/releases/tag/v4.3.24)
 2. Clone or download this repository and copy the files terrajs.dll and jint.dll in terrajs/bin/debug
 3. Paste the file in the serverplugins folder of your tshock directory
 4. To start the server, open the command window in the TShock directory and run "TerrariaServer -ignoreversion" (without the quotes)
