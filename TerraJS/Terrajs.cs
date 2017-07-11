@@ -21,7 +21,7 @@ namespace Terrajs
         /// </summary>
         public override string Author
         {
-            get { return "Anonymous"; }
+            get { return "Eater-of-Cake"; }
         }
 
         /// <summary>
@@ -30,7 +30,7 @@ namespace Terrajs
         /// </summary>
         public override string Description
         {
-            get { return "A sample test plugin"; }
+            get { return "Make TShock plugins in javascript!"; }
         }
 
         /// <summary>
@@ -38,7 +38,7 @@ namespace Terrajs
         /// </summary>
         public override string Name
         {
-            get { return "Test Plugin"; }
+            get { return "TShockJS"; }
         }
 
         /// <summary>
@@ -75,6 +75,10 @@ namespace Terrajs
 
             e.SetValue("killPlayer", new Action<string>(killPlr));
 
+            e.SetValue("mkHook", new Action<string, string>(mkHook));
+
+            e.SetValue("killNpc", new Action<int>(killNpc));
+
             if (!Directory.Exists("jsplugins"))
             {
                 Directory.CreateDirectory("jsplugins");
@@ -84,6 +88,27 @@ namespace Terrajs
             {
                 Console.WriteLine("Loading " + entry + "...");
                 e.Execute(File.ReadAllText(entry));
+            }
+
+
+        }
+
+        private void killNpc(int id)
+        {
+            Main.npc[id].active = false;
+            Main.npc[id].type = 0;
+            TSPlayer.All.SendData(PacketTypes.NpcUpdate, "", id);
+        }
+
+        void mkHook(string hooktype, string callback)
+        {
+            if(hooktype == "playerChat")
+            {
+                ServerApi.Hooks.ServerChat.Register(this, (ServerChatEventArgs args) => {e.Execute(callback + "({msg: \"" + args.Text + "\", player: \"" + TShock.Players[args.Who].Name + "\"})");});
+            }
+            if(hooktype == "npcSpawn")
+            {
+                ServerApi.Hooks.NpcSpawn.Register(this, (NpcSpawnEventArgs args) => {e.Execute(callback + "({npc: \"" + args.NpcId + "\"})"); });
             }
         }
 
@@ -112,7 +137,7 @@ namespace Terrajs
         void mkCmd(string cmdname, string callback)
         {
             Console.WriteLine("makingcmd");
-            Commands.ChatCommands.Add(new Command("terrajs.run", (CommandArgs args) => { e.Execute(callback + "({player: \"" + args.Player.Name + "\"})");}, cmdname));
+            Commands.ChatCommands.Add(new Command("terrajs.run", (CommandArgs args) => {e.Execute(callback + "({player: \"" + args.Player.Name + "\"})");}, cmdname));
         }
 
         /// <summary>
