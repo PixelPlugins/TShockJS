@@ -1,6 +1,8 @@
 # TShockJS
 Tool to make Tshock terraria plugins in javascript
 
+[![Github All Releases](https://img.shields.io/github/downloads/atom/atom/total.svg)](https://github.com/PixelPlugins/TShockJS)
+
 ----------------------------------------------------
 How to use:
 
