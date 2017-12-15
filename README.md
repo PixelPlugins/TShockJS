@@ -1,6 +1,7 @@
 # TShockJS
 Tool to make Tshock terraria plugins in javascript
 
+[![GitHub forks](https://img.shields.io/github/forks/PixelPlugins/TShockJS.svg)](https://github.com/PixelPlugins/TShockJS/network)
 
 ----------------------------------------------------
 How to use:
